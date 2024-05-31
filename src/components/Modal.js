@@ -26,7 +26,7 @@ const ModalViewer = ({
   return (
     <div>
       <Modal show={showEditModal} onHide={handleModalClose}>
-        <ModalHeader className="text-purple-600 text-[34px]">
+        <ModalHeader className="text-purple-800 text-[34px]">
           Manage Schedule
         </ModalHeader>
         <ModalBody className="overflow-y-auto">
@@ -34,7 +34,7 @@ const ModalViewer = ({
             <FormGroup className="mb-3">
               <Form.Label
                 htmlFor="consultationType"
-                className="form-label text-purple-600 text-xs"
+                className="form-label text-purple-800 text-xs"
               >
                 Appointment Type
               </Form.Label>
@@ -50,7 +50,7 @@ const ModalViewer = ({
             <FormGroup className="mb-3">
               <Form.Label
                 htmlFor="mode"
-                className="form-label text-purple-600 text-xs"
+                className="form-label text-purple-800 text-xs"
               >
                 Mode
               </Form.Label>
@@ -69,7 +69,7 @@ const ModalViewer = ({
                 <div>
                   <Form.Label
                     htmlFor="domesticFee"
-                    className="form-label text-purple-600 text-xs"
+                    className="form-label text-purple-800 text-xs"
                   >
                    Charges- Domestic
                   </Form.Label>
@@ -86,7 +86,7 @@ const ModalViewer = ({
                 <div>
                   <Form.Label
                     htmlFor="domesticFee"
-                    className="form-label text-purple-700 text-xs"
+                    className="form-label text-purple-800 text-xs"
                   >
                    Charges- International
                   </Form.Label>
@@ -108,7 +108,7 @@ const ModalViewer = ({
           <Button
             variant="primary"
             onClick={handleSaveChanges}
-            className="bg-purple-600 border border-purple-600 hover:bg-purple-600 active:bg-purple-600 text-white font-semibold"
+            className="bg-purple-800 border border-purple-600 hover:bg-purple-800 active:bg-purple-800 text-white font-semibold"
           >
             Save Changes
           </Button>

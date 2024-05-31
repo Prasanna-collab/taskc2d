@@ -10,7 +10,7 @@ const App = () => {
       consultationType: "First Time Consultation",
       fees: "500/5000",
       edit: "Edit",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. Devendra Agraharam",
@@ -18,7 +18,7 @@ const App = () => {
       consultationType: "Follow-up Consultation",
       fees: "500/5000",
       edit: "",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. J. Deenadayalan",
@@ -26,7 +26,7 @@ const App = () => {
       consultationType: "Emergency Consultation",
       fees: "500/5000",
       edit: "",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. (Prot) Rajasekaran",
@@ -34,7 +34,7 @@ const App = () => {
       consultationType: "Routine Check-up",
       fees: "500/5000",
       edit: "9",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. (Prof) Rajasekaran",
@@ -42,14 +42,14 @@ const App = () => {
       consultationType: "Regular Consultation",
       fees: "500/5000",
       edit: "9",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },{
       name: "Dr. B. Roy Wilson Armstrong",
       mode: "Scheduled",
       consultationType: "First Time Consultation",
       fees: "500/5000",
       edit: "Edit",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. Devendra Agraharam",
@@ -57,7 +57,7 @@ const App = () => {
       consultationType: "Follow-up Consultation",
       fees: "500/5000",
       edit: "",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. J. Deenadayalan",
@@ -65,7 +65,7 @@ const App = () => {
       consultationType: "Emergency Consultation",
       fees: "500/5000",
       edit: "",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. (Prot) Rajasekaran",
@@ -73,7 +73,7 @@ const App = () => {
       consultationType: "Routine Check-up",
       fees: "500/5000",
       edit: "9",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
     {
       name: "Dr. (Prof) Rajasekaran",
@@ -81,7 +81,7 @@ const App = () => {
       consultationType: "Regular Consultation",
       fees: "500/5000",
       edit: "9",
-      days: "Mon Tue Wed Thu Fri Sat",
+      days: "Mon, Tue, Wed, Thu, Fri, Sat",
     },
   ]);
 
