@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
-  font-family:"helvetica";
-  src:url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
-  url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
-  url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+.lato-light {
+  font-weight: 300;
+  font-style: normal;
 }
 *{
-  font-family:"helvetica";
+  font-family: "Lato", sans-serif;
   font-size: medium;
 }
 ::-webkit-scrollbar {

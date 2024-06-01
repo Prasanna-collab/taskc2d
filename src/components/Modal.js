@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Modal,
@@ -18,10 +17,10 @@ const ModalViewer = ({
   handleSaveChanges,
 }) => {
   if (!selectedProvider) {
-    return null; 
+    return null;
   }
 
-  const [domesticFee, internationalFee] = selectedProvider.fees.split("/");
+  // const {domesticFee, internationalFee} = selectedProvider.fees;
 
   return (
     <div>
@@ -44,7 +43,9 @@ const ModalViewer = ({
                 id="consultationType"
                 name="consultationType"
                 value={selectedProvider?.consultationType || ""}
-                onChange={handleInputChange}
+                onChange={(e) =>
+                  handleInputChange(e, selectedProvider.consultationId)
+                }
               />
             </FormGroup>
             <FormGroup className="mb-3">
@@ -60,7 +61,9 @@ const ModalViewer = ({
                 id="mode"
                 name="mode"
                 value={selectedProvider?.mode || ""}
-                onChange={handleInputChange}
+                onChange={(e) =>
+                  handleInputChange(e, selectedProvider.consultationId)
+                }
               />
             </FormGroup>
 
@@ -71,37 +74,40 @@ const ModalViewer = ({
                     htmlFor="domesticFee"
                     className="form-label text-purple-800 text-xs"
                   >
-                   Charges- Domestic
+                    Charges- Domestic
                   </Form.Label>
                   <Form.Control
                     type="text"
                     className="form-control border border-purple-400 flex-1 mr-2"
                     id="domesticFee"
                     name="domesticFee"
-                    value={domesticFee || ""}
-                    onChange={handleInputChange}
+                    value={selectedProvider.fees.domesticFee || ""}
+                    onChange={(e) =>
+                      handleInputChange(e, selectedProvider.consultationId)
+                    }
                   />
                 </div>
 
                 <div>
                   <Form.Label
-                    htmlFor="domesticFee"
+                    htmlFor="internationalFee"
                     className="form-label text-purple-800 text-xs"
                   >
-                   Charges- International
+                    Charges- International
                   </Form.Label>
                   <Form.Control
                     type="text"
                     className="form-control border border-purple-400 flex-1 ml-2"
-                    id="domesticFee"
-                    name="domesticFee"
-                    value={internationalFee || ""}
-                    onChange={handleInputChange}
+                    id="internationalFee"
+                    name="internationalFee"
+                    value={selectedProvider.fees.internationalFee || ""}
+                    onChange={(e) =>
+                      handleInputChange(e, selectedProvider.consultationId)
+                    }
                   />
                 </div>
               </div>
             </FormGroup>
-
           </Form>
         </ModalBody>
         <ModalFooter>

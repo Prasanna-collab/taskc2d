@@ -39,7 +39,7 @@ const HealthProviderTable = ({ providers,handleEditClick }) => {
               </i>
               </td>
               <td className="px-3 py-2">{provider.consultationType}</td>
-              <td className="px-3 py-2">{provider.fees}</td>
+              <td className="px-3 py-2">{provider.fees.domesticFee}/{provider.fees.internationalFee}</td>
               <td className="px-3 py-2">
                 <button className="mr-2 w-10 text-blue-500 hover:text-blue-700 focus:outline-none bg-slate-200 p-1 rounded mx-1">
                   <FontAwesomeIcon
